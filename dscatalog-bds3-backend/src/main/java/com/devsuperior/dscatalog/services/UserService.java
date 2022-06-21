@@ -4,6 +4,7 @@ import java.util.Optional;
 
 import javax.persistence.EntityNotFoundException;
 
+import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -31,7 +32,7 @@ import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
 @Service
 public class UserService implements UserDetailsService {
 	
-	private static Logger logger = org.slf4j.LoggerFactory.getLogger(UserService.class);
+	private static Logger logger = LoggerFactory.getLogger(UserService.class);
 
 	@Autowired
 	private UserRepository repository;
