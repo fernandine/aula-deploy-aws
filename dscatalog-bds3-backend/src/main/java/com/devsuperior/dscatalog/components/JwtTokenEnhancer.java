@@ -13,6 +13,8 @@ import org.springframework.stereotype.Component;
 import com.devsuperior.dscatalog.entities.User;
 import com.devsuperior.dscatalog.repositories.UserRepository;
 
+	//Complementando informações ao token.
+
 @Component
 public class JwtTokenEnhancer implements TokenEnhancer {
 
